@@ -27,3 +27,7 @@
   justify-content: space-around;
   flex-wrap: wrap;
 }
+
+.id {
+  text-align: center;
+}

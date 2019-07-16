@@ -10,7 +10,7 @@ const App = () => {
   const [recipes, setRecipes] = useState([]);
   const [query, setQuery] = useState("chicken");
   
-  useEffect( async () => {
+  useEffect( () => {
     getRecipes();
   }, [query]);
 
@@ -30,9 +30,17 @@ const App = () => {
     console.log(search);
   }
 
+  const buttonSearch = e => {
+    e.preventDefault();
+    setQuery(e.target.value);
+    console.log(e.target.value);
+  }
+
   return ( 
-    <div className='App'>
-      <h1>Recipe App</h1>
+    <div className="App">
+      <h1 className="id">Recipe App</h1>
+      <button onClick={buttonSearch} type="button" value="Potato">Potato</button>
+      <button  onClick={buttonSearch} type="button" value="Yam">Yam</button>
       <form className="search-form" onSubmit={getSearch} >
         <input className="search-bar" type="text" value={search} onChange={updateSearch} />
         <button className="search-button" type="submit" >Search</button>
