@@ -4,17 +4,23 @@
     margin: 20px;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
     background: white;
     align-items: center;
     width: 30%;
+    height: 550px;
+    overflow: hidden;
 }
 
 .image {
-    border-radius: 30%;
-    width: 30%;
-    height: 120px; 
+    width: 100%;
+    height: 150px;
+    object-fit: cover; 
+    border-radius: 10px 10px 0 0;
 }
+
+/* .images {
+    
+} */
 
 .body {
     width: 70%;
