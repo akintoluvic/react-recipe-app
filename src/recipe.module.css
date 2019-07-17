@@ -7,11 +7,15 @@
     justify-content: space-around;
     background: white;
     align-items: center;
-    width: 40%;
+    width: 30%;
 }
 
 .image {
-    border-radius: 50%;
-    width: 100%;
-    height: 100%; 
+    border-radius: 30%;
+    width: 30%;
+    height: 120px; 
+}
+
+.body {
+    width: 70%;
 }
