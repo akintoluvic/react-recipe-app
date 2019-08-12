@@ -37,3 +37,9 @@
   text-align: center;
   padding-top: 40px;
 }
+
+@media (max-width: 1450px) {
+  .recipes {
+    padding: 0;
+  }
+}
