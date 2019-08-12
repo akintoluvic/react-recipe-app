@@ -30,6 +30,7 @@
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
+  padding: 0 130px;
 }
 
 .id {
