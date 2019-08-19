@@ -1,10 +1,12 @@
 import React from 'react'
+import Logo from "../images/logo.png"
 
-function Header(props) {
+function Header() {
     return (
         <>
-        <img src="./images/h-img.jpg" />
-            
+        <img src="./h-img.jpg" ></img>
+        <img src={Logo} ></img>
+          <h4>Header</h4>  
         </>
     )
 }
