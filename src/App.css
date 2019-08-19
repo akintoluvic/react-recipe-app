@@ -7,17 +7,6 @@
   background-image: linear-gradient(to top, #7a9738, #86ab34, #91c02e, #9dd524, #a8eb12);
 }
 
-.brand {
-  display: 'flex';
-  align-items: 'center';
-  margin-left: '20px';
-}
-
-.h-img {
-  display: 'flex';
-  justify-content: 'center';
-}
-
 .search-form {
   min-height: 10vh;
   display: flex;
@@ -46,7 +35,7 @@
 
 .id {
   text-align: center;
-  padding-top: 10px;
+  padding-top: 0px;
 }
 
 @media (max-width: 1450px) {

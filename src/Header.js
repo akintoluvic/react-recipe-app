@@ -3,22 +3,29 @@ import Logo from "./images/logo.png"
 import HeadImg from "./images/h-img.png"
 
 function Header() {
-    const Brand = {
+    const brand = {
         display: 'flex',
         alignItems: 'center',
+        justifyContent: 'center',
         marginLeft: '20px'
     }
-    const HeaderImg = {
+    const headerImg = {
         display: 'flex',
-        justifyContent: 'center'
+        justifyContent: 'center',
+        marginTop: '30px'
+    }
+    const brandNAme = {
+        marginLeft: '10px',
+        fontFamily: 'Work Sans'
     }
     return (
         <>
-        <span style={Brand}>
-            <img src={Logo} height="30px" width="30px" /><h3 >Recipe App</h3>
-        </span>
-        <span style={HeaderImg}>
+        
+        <span style={headerImg}>
             <img src={HeadImg} height="250px" width="" ></img>
+        </span>
+        <span style={brand}>
+            <img src={Logo} height="35px" width="35px" /><h2 style={brandNAme}>Recipe App</h2>
         </span>
         
         
