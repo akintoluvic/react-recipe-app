@@ -2,9 +2,10 @@ import React from 'react'
 
 function Header(props) {
     return (
-        <div>
+        <>
+        <img src="./images/h-img.jpg" />
             
-        </div>
+        </>
     )
 }
 
