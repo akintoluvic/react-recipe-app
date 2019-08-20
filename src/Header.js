@@ -16,7 +16,7 @@ function Header() {
     }
     const brandNAme = {
         marginLeft: '10px',
-        fontFamily: 'Work Sans'
+        // fontFamily: 'Work Sans'
     }
     return (
         <>
