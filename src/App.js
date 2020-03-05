@@ -42,6 +42,7 @@ const App = () => {
       </form>
       <Button name="Sign Up" color="btn btn-black" />
       <Button name="Login Now" color="btn btn-white" />
+      <Button name="Login Now" color="btn btn-black" />
       <div className="recipes">
         {recipes.map( recipe =>(
           <Recipe 
