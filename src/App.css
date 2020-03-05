@@ -26,6 +26,16 @@
   padding: 10px 20px;
 }
 
+.btn {
+  padding: 10px 20px;
+  border-radius: 25px;
+  border: 0;
+}
+
+.btn-black {
+  color: #fff;
+  background-color: black;
+}
 .recipes {
   display: flex;
   justify-content: space-around;

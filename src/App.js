@@ -40,7 +40,7 @@ const App = () => {
         <input className="search-bar" type="text" value={search} onChange={updateSearch} placeholder="Type in your main ingredient" />
         <button className="search-button" type="submit" >Search</button>
       </form>
-      <Button name="Sign Up" />
+      <Button name="Sign Up" color="btn btn-black" />
       <div className="recipes">
         {recipes.map( recipe =>(
           <Recipe 
