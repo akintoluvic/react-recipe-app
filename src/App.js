@@ -2,6 +2,7 @@ import React, {useEffect, useState} from 'react';
 import Recipe from './Recipe';
 import './App.css';
 import Header from './Header';
+import { Button } from './components/Button';
 
 const App = () => {
   const APP_ID = "8f29537d";
@@ -39,6 +40,7 @@ const App = () => {
         <input className="search-bar" type="text" value={search} onChange={updateSearch} placeholder="Type in your main ingredient" />
         <button className="search-button" type="submit" >Search</button>
       </form>
+      <Button name="Sign Up" />
       <div className="recipes">
         {recipes.map( recipe =>(
           <Recipe 
