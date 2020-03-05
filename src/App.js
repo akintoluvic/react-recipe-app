@@ -41,6 +41,7 @@ const App = () => {
         <button className="search-button" type="submit" >Search</button>
       </form>
       <Button name="Sign Up" color="btn btn-black" />
+      <Button name="Login Now" color="btn btn-white" />
       <div className="recipes">
         {recipes.map( recipe =>(
           <Recipe 

@@ -36,6 +36,12 @@
   color: #fff;
   background-color: black;
 }
+
+.btn-white {
+  color: black;
+  background-color: #fff;
+}
+
 .recipes {
   display: flex;
   justify-content: space-around;
