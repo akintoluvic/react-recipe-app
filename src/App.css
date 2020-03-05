@@ -4,7 +4,15 @@
   position: absolute;
   top: 0px;
   margin: 0;
+  padding: 0 80px;
+  box-sizing: border-box;
   background-image: linear-gradient(to top, #7a9738, #86ab34, #91c02e, #9dd524, #a8eb12);
+}
+
+.top-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .search-form {

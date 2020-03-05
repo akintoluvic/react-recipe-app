@@ -3,6 +3,7 @@ import Recipe from './Recipe';
 import './App.css';
 import Header from './Header';
 import { Button } from './components/Button';
+import { Nav } from './components/Nav';
 
 const App = () => {
   const APP_ID = "8f29537d";
@@ -34,6 +35,7 @@ const App = () => {
 
   return ( 
     <div className="App">
+      <Nav />
       <Header />
       {/* <h1 className="id">Type in your Recipe</h1> */}
       <form className="search-form" onSubmit={getSearch} >
