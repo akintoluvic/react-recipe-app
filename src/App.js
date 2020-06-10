@@ -1,8 +1,7 @@
 import React, {useEffect, useState} from 'react';
 import Recipe from './Recipe';
-import './App.css';
+import './tailwind.css';
 import Header from './Header';
-import { Button } from './components/Button';
 import { Nav } from './components/Nav';
 
 const App = () => {
@@ -34,7 +33,7 @@ const App = () => {
   }
 
   return ( 
-    <div className="App">
+    <div className="App"  class="bg-gray-100 pt-24 lg:pt-0">
       <Nav />
       <Header />
       {/* <h1 className="id">Type in your Recipe</h1> */}
@@ -42,9 +41,6 @@ const App = () => {
         <input className="search-bar" type="text" value={search} onChange={updateSearch} placeholder="Type in your main ingredient" />
         <button className="search-button" type="submit" >Search</button>
       </form>
-      <Button name="Sign Up" color="btn btn-black" />
-      <Button name="Login Now" color="btn btn-white" />
-      <Button name="Login Now" color="btn btn-black" />
       <div className="recipes">
         {recipes.map( recipe =>(
           <Recipe 
