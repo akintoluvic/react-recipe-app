@@ -2,7 +2,6 @@ import React from 'react';
 import Recipe from './Recipe';
 
 const Recipes = ({recipes}) => {
-    // if (recipes === undefined) return <div>Loading</div>;
     return ( 
         <section class="text-gray-700 body-font pt-0">
         <div class="container px-5 mx-auto">

@@ -75,7 +75,7 @@ export const Nav = ({search, onSearch, textChange}) => {
               </div>
 
               <div className="flex flex-grow lg:w-3/4 xl:w-4/5">
-                <div className="w-full lg:px-6 lg:w-3/4 xl:px-12 pr-4 ">
+                <div className="w-full lg:px-6 lg:w-3/4 xl:px-12 sm:pr-4 ">
                   <div className="relative">
                     <input
                       id="docsearch"
@@ -97,7 +97,7 @@ export const Nav = ({search, onSearch, textChange}) => {
                   </div>
                   
                 </div>
-                <button type="button" className="bg-gray-800 rounded-lg text-gray-500 focus:outline-none focus:text-gray-700 flex px-6 items-center "
+                <button type="button" className="bg-gray-600 rounded-lg text-gray-100 focus:outline-none hover:bg-gray-700 flex px-6 items-center "
                 onClick={() => onSearch()} >
                     Search
                   </button>
