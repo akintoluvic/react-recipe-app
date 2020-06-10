@@ -1,9 +1,7 @@
 import React, {useEffect, useState} from 'react';
 import Recipes from './Recipes';
-import Recipe from './Recipe';
 import './tailwind.css';
 import './App.css';
-import Header from './Header';
 import { Nav } from './components/Nav';
 
 const App = () => {
@@ -11,7 +9,7 @@ const App = () => {
   const APP_KEY = "13b26292968b004e8a3ca722e2e660d3";
 
   const [search, setSearch] = useState([]);  
-  const [recipes, setRecipes] = useState([]);
+  const [recipes, setRecipes] = useState([1,2,3,4,5,6]);
   const [query, setQuery] = useState("chicken");
   
   useEffect( () => {
@@ -42,8 +40,8 @@ const App = () => {
         <input className="search-bar" type="text" value={search} onChange={updateSearch} placeholder="Type in your main ingredient" />
         <button className="search-button" type="submit" >Search</button>
       </form> */}
-      <Recipes />
-      <div className="recipes">
+      <Recipes recipes={recipes} />
+      {/* <div className="recipes">
         {recipes.map( recipe =>(
           <Recipe 
             key= {recipe.recipe.calories} 
@@ -53,7 +51,7 @@ const App = () => {
             ingredients={recipe.recipe.ingredients} 
           />
         ))}
-      </div>
+      </div> */}
     </div>
    );
 }

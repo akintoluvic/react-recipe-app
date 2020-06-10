@@ -1,8 +1,7 @@
 import React from 'react';
-import style from "./recipe.module.css";
 import Recipe from './Recipe';
 
-const Recipes = ({title, calories, image, ingredients}) => {
+const Recipes = ({recipes}) => {
     return ( 
         // <div className={style.recipe}>
         //     <img src={image} className={style.image} alt="" />
@@ -27,9 +26,9 @@ const Recipes = ({title, calories, image, ingredients}) => {
             </div>
           </div>
           <div class="flex flex-wrap sm:-m-4 -mx-4 -mb-10 -mt-4">
-            <Recipe />
-            <Recipe />
-            <Recipe />
+            {recipes.map( recipe =>(
+                <Recipe recipe={recipe} />
+            ))}
           </div>
         </div>
       </section>

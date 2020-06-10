@@ -1,7 +1,13 @@
 import React from 'react';
-import style from "./recipe.module.css";
 
-const Recipe = ({title, calories, image, ingredients}) => {
+const Recipe = (recipe) => {
+    // const [title, calories, image, ingredients] = recipe;
+    // key= {recipe.recipe.calories} 
+    //             title={recipe.recipe.label} 
+    //             calories={recipe.recipe.calories} 
+    //             image={recipe.recipe.image} 
+    //             ingredients={recipe.recipe.ingredients}
+    console.log(recipe)
     return ( 
         // <div className={style.recipe}>
         //     <img src={image} className={style.image} alt="" />
@@ -22,9 +28,6 @@ const Recipe = ({title, calories, image, ingredients}) => {
           <h2 class="text-xl font-medium title-font text-gray-900 mt-5">Shooting Stars</h2>
           <p class="text-base leading-relaxed mt-2">Swag shoivdigoitch literally meditation subway tile tumblr cold-pressed. Gastropub street art beard dreamcatcher neutra, ethical XOXO lumbersexual.</p>
           <a class="text-blue-500 inline-flex items-center mt-3">Learn More
-            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
-              <path d="M5 12h14M12 5l7 7-7 7"></path>
-            </svg>
           </a>
         </div>
      );
