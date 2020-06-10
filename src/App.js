@@ -2,6 +2,7 @@ import React, {useEffect, useState} from 'react';
 import Recipes from './Recipes';
 import Recipe from './Recipe';
 import './tailwind.css';
+import './App.css';
 import Header from './Header';
 import { Nav } from './components/Nav';
 

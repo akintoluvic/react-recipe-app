@@ -16,7 +16,7 @@ const Recipes = ({title, calories, image, ingredients}) => {
         //         <p>{calories}</p>
         //     </div>
         // </div>
-        <section class="text-gray-700 body-font">
+        <section class="text-gray-700 body-font pt-24 lg:pt-0">
         <div class="container px-5 py-24 mx-auto">
           <div class="flex flex-col">
             <div class="h-1 bg-gray-200 rounded overflow-hidden">
@@ -24,7 +24,6 @@ const Recipes = ({title, calories, image, ingredients}) => {
             </div>
             <div class="flex flex-wrap sm:flex-row flex-col py-6 mb-12">
               <h1 class="sm:w-2/5 text-gray-900 font-medium title-font text-2xl mb-2 sm:mb-0">Space The Final Frontier</h1>
-              <p class="sm:w-3/5 leading-relaxed text-base sm:pl-10 pl-0">Street art subway tile salvia four dollar toast bitters selfies quinoa yuccie synth meditation iPhone intelligentsia prism tofu. Viral gochujang bitters dreamcatcher.</p>
             </div>
           </div>
           <div class="flex flex-wrap sm:-m-4 -mx-4 -mb-10 -mt-4">
