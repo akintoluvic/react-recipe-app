@@ -1,8 +1,8 @@
 import React, {useEffect, useState} from 'react';
-import Recipe from './Recipe';
 import './tailwind.css';
 import './App.css';
 import { Nav } from './components/Nav';
+import Recipes from './Recipes';
 
 const App = () => {
   const APP_ID = "8f29537d";
@@ -40,28 +40,7 @@ const App = () => {
         textChange={updateSearch} 
         search={search} 
       />
-      
-      <section className="text-gray-700 body-font pt-0">
-        <div className="container px-5 mx-auto">
-          <div className="flex flex-col">
-            <div className="flex flex-wrap sm:flex-row flex-col py-6 mb-12">
-              <h1 className="sm:w-2/5 text-gray-900 font-medium title-font text-2xl mb-2 sm:mb-0">
-                Space The Final Frontier</h1>
-            </div>
-          </div>
-          <div className="flex flex-wrap sm:-m-4 -mx-4 -mb-10 -mt-4">
-            {recipes.map( recipe =>(
-                <Recipe 
-                  key= {recipe.recipe.calories} 
-                  title={recipe.recipe.label} 
-                  calories={recipe.recipe.calories} 
-                  image={recipe.recipe.image} 
-                  ingredients={recipe.recipe.ingredients}  
-                />
-            ))}
-          </div>
-        </div>
-      </section>
+      <Recipes recipes={recipes} />
     </div>
    );
 }
