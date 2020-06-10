@@ -27,7 +27,8 @@ const Recipes = ({recipes}) => {
           </div>
           <div class="flex flex-wrap sm:-m-4 -mx-4 -mb-10 -mt-4">
             {recipes.map( recipe =>(
-                <Recipe recipe={recipe} />
+                <Recipe key={recipe} recipe={recipe} />
+                // key= {recipe.recipe.calories} 
             ))}
           </div>
         </div>
