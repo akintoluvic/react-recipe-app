@@ -75,7 +75,7 @@ export const Nav = () => {
               </div>
 
               <div class="flex flex-grow lg:w-3/4 xl:w-4/5">
-                <div class="w-full lg:px-6 lg:w-3/4 xl:px-12 pr-4">
+                <div class="w-full lg:px-6 lg:w-3/4 xl:px-12 pr-4 ">
                   <div class="relative">
                     <input
                       id="docsearch"
@@ -93,12 +93,13 @@ export const Nav = () => {
                       </svg>
                     </div>
                   </div>
+                  
                 </div>
-                
-
                 <button type="button" class="bg-gray-800 rounded-lg text-gray-500 focus:outline-none focus:text-gray-700 flex px-6 items-center ">
                     Search
                   </button>
+
+                
   
 
                 <div class="hidden lg:flex lg:items-center lg:justify-between xl:w-1/4 px-6">
