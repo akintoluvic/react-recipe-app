@@ -37,11 +37,11 @@ const App = () => {
   return ( 
     <div className="App"  class="bg-gray-100 pt-24 lg:pt-0">
       <Nav />
-      <Header />
-      <form className="search-form" onSubmit={getSearch} >
+      {/* <Header /> */}
+      {/* <form className="search-form" onSubmit={getSearch} >
         <input className="search-bar" type="text" value={search} onChange={updateSearch} placeholder="Type in your main ingredient" />
         <button className="search-button" type="submit" >Search</button>
-      </form>
+      </form> */}
       <Recipes />
       <div className="recipes">
         {recipes.map( recipe =>(

@@ -5,8 +5,8 @@ import linkedin from "../images/linkedin.svg";
 
 export const Nav = () => {
   return (
-    <div class="bg-gray-100 pt-24 lg:pt-0">
-      <div class="fixed z-100 bg-gray-100 inset-x-0 top-0 border-b-2 border-gray-200 lg:border-b-0 lg:static flex items-center">
+    <div class="bg-gray-200 pt-24 lg:pt-0">
+      <div class="fixed z-100 bg-gray-200 inset-x-0 top-0 border-b-2 border-gray-200 lg:border-b-0 lg:static flex items-center">
         <div class="w-full max-w-screen-xl relative mx-auto px-6">
           <div class="lg:border-b-2 lg:border-gray-200 h-24 flex flex-col justify-center">
             <div class="flex items-center -mx-6">
@@ -17,7 +17,7 @@ export const Nav = () => {
                       GreeneRecipes
                     </h1>
 
-                    <svg
+                    {/* <svg
                       class="h-12 w-auto hidden md:block"
                       viewBox="0 0 273 64"
                       fill="none"
@@ -44,7 +44,7 @@ export const Nav = () => {
                           <stop offset="1" stop-color="#0ED7B5" />
                         </linearGradient>
                       </defs>
-                    </svg>
+                    </svg> */}
 
                     <svg
                       class="w-10 h-10 block md:hidden"
@@ -79,7 +79,7 @@ export const Nav = () => {
                   <div class="relative">
                     <input
                       id="docsearch"
-                      class="transition-colors duration-100 ease-in-out bg-white shadow-md focus:outline-0 border border-transparent placeholder-gray-600 rounded-lg py-2 pr-2 pl-10 block w-full appearance-none leading-normal"
+                      class="transition-colors duration-100 ease-in-out bg-white shadow-sm focus:outline-0 border border-transparent placeholder-gray-600 rounded-lg py-2 pr-2 pl-10 block w-full appearance-none leading-normal"
                       type="text"
                       placeholder="Enter recipe here to search"
                     />
@@ -96,18 +96,8 @@ export const Nav = () => {
                 </div>
                 
 
-                <button type="button" class="bg-gray-800 rounded-lg text-gray-500 focus:outline-none focus:text-gray-700 flex px-6 items-center md:hidden">
+                <button type="button" class="bg-gray-800 rounded-lg text-gray-500 focus:outline-none focus:text-gray-700 flex px-6 items-center ">
                     Search
-                  </button>
-
-                  <button type="button" class="bg-gray-800 rounded-lg text-gray-500 focus:outline-none focus:text-gray-700 flex px-6 items-center lg:hidden">
-                    <svg
-                        class="fill-current pointer-events-none text-gray-600 w-4 h-4"
-                        xmlns="http://www.w3.org/2000/svg"
-                        viewBox="0 0 20 20"
-                      >
-                        <path d="M12.9 14.32a8 8 0 1 1 1.41-1.41l5.35 5.33-1.42 1.42-5.33-5.34zM8 14A6 6 0 1 0 8 2a6 6 0 0 0 0 12z" />
-                      </svg>
                   </button>
   
 
