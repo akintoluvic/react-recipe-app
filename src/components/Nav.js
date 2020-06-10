@@ -1,6 +1,4 @@
 import React from "react";
-import { Button } from "./Button";
-import Icons from "./Icons";
 import github from "../images/github.svg";
 import twitter from "../images/twitter.svg";
 import linkedin from "../images/linkedin.svg";
