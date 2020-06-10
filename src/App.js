@@ -36,7 +36,6 @@ const App = () => {
     <div className="App"  class="bg-gray-100 pt-24 lg:pt-0">
       <Nav />
       <Header />
-      {/* <h1 className="id">Type in your Recipe</h1> */}
       <form className="search-form" onSubmit={getSearch} >
         <input className="search-bar" type="text" value={search} onChange={updateSearch} placeholder="Type in your main ingredient" />
         <button className="search-button" type="submit" >Search</button>
