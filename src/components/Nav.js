@@ -85,7 +85,7 @@ export const Nav = () => {
                     />
                     <div class="pointer-events-none absolute inset-y-0 left-0 pl-4 flex items-center">
                       <svg
-                        class="fill-current pointer-events-none text-gray-600 w-4 h-4"
+                        class="fill-current md-hidden pointer-events-none text-gray-600 w-4 h-4"
                         xmlns="http://www.w3.org/2000/svg"
                         viewBox="0 0 20 20"
                       >
@@ -94,22 +94,22 @@ export const Nav = () => {
                     </div>
                   </div>
                 </div>
-                <a
-                  href="/"
-                  class="inline-flex items-center bg-gray-800 hover:bg-gray-700 focus:outline-none focus:bg-gray-700 px-6 py-2 rounded-lg text-white font-medium shadow text-lg"
-                >
-                  Search
-                </a>
+                
 
-                {/*   
-                  <button type="button" id="sidebar-open" class="text-gray-500 focus:outline-none focus:text-gray-700 flex px-6 items-center lg:hidden">
-                    <svg class="fill-current w-4 h-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"/></svg>
+                <button type="button" class="bg-gray-800 rounded-lg text-gray-500 focus:outline-none focus:text-gray-700 flex px-6 items-center md:hidden">
+                    Search
+                  </button>
+
+                  <button type="button" class="bg-gray-800 rounded-lg text-gray-500 focus:outline-none focus:text-gray-700 flex px-6 items-center lg:hidden">
+                    <svg
+                        class="fill-current pointer-events-none text-gray-600 w-4 h-4"
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 20 20"
+                      >
+                        <path d="M12.9 14.32a8 8 0 1 1 1.41-1.41l5.35 5.33-1.42 1.42-5.33-5.34zM8 14A6 6 0 1 0 8 2a6 6 0 0 0 0 12z" />
+                      </svg>
                   </button>
   
-  
-                  <button type="button" id="sidebar-close" class="text-gray-500 focus:outline-none focus:text-gray-700 hidden flex px-6 items-center lg:hidden">
-                    <svg class="fill-current w-4 h-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M10 8.586L2.929 1.515 1.515 2.929 8.586 10l-7.071 7.071 1.414 1.414L10 11.414l7.071 7.071 1.414-1.414L11.414 10l7.071-7.071-1.414-1.414L10 8.586z"/></svg>
-                  </button> */}
 
                 <div class="hidden lg:flex lg:items-center lg:justify-between xl:w-1/4 px-6">
                   <div class="flex justify-start items-center text-gray-500">
