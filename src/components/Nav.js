@@ -3,7 +3,7 @@ import github from "../images/github.svg";
 import twitter from "../images/twitter.svg";
 import linkedin from "../images/linkedin.svg";
 
-export const Nav = (search, onSearch, textChange) => {
+export const Nav = ({search, onSearch, textChange}) => {
   return (
     <div className="bg-gray-200 pt-24 lg:pt-0">
       <div className="fixed z-100 bg-gray-200 inset-x-0 top-0 border-b-2 border-gray-200 lg:border-b-0 lg:static flex items-center">
@@ -82,9 +82,9 @@ export const Nav = (search, onSearch, textChange) => {
                       className="transition-colors duration-100 ease-in-out bg-white shadow-sm focus:outline-0 border border-transparent placeholder-gray-600 rounded-lg py-2 pr-2 pl-10 block w-full appearance-none leading-normal"
                       type="text"
                       value={search}
-                      onChange={() => textChange()}
+                      onChange={e => textChange(e)}
                       placeholder="Enter recipe here to search"
-                    />
+                />
                     <div className="pointer-events-none absolute inset-y-0 left-0 pl-4 flex items-center">
                       <svg
                         className="fill-current md-hidden pointer-events-none text-gray-600 w-4 h-4"

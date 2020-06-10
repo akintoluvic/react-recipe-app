@@ -34,24 +34,12 @@ const App = () => {
   }
 
   return ( 
-    <div className="App"  className="bg-gray-100 pt-24 lg:pt-0">
+    <div className="App bg-gray-100 pt-24 lg:pt-0">
       <Nav 
         onSearch={getSearch} 
         textChange={updateSearch} 
         search={search} 
       />
-      <section className="flex flex-row space-between lg:px-24 sm:px-6 text-gray-700 body-font pt-0">
-      <h1 className="text-3xl  text-gray-700 font-bold w-auto hidden md:block">
-          GreeneRecipes
-      </h1>
-      <form 
-        className="px-24"
-        onSubmit={getSearch} 
-      >
-        <input className="search-bar" type="text" value={search} onChange={updateSearch} placeholder="Type in your main ingredient" />
-        <button className="search-button" type="submit" >Search</button>
-      </form>
-      </section>
       
       <section className="text-gray-700 body-font pt-0">
         <div className="container px-5 mx-auto">
