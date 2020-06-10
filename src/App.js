@@ -1,4 +1,5 @@
 import React, {useEffect, useState} from 'react';
+import Recipes from './Recipes';
 import Recipe from './Recipe';
 import './tailwind.css';
 import Header from './Header';
@@ -40,6 +41,7 @@ const App = () => {
         <input className="search-bar" type="text" value={search} onChange={updateSearch} placeholder="Type in your main ingredient" />
         <button className="search-button" type="submit" >Search</button>
       </form>
+      <Recipes />
       <div className="recipes">
         {recipes.map( recipe =>(
           <Recipe 

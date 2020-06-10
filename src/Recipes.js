@@ -1,0 +1,40 @@
+import React from 'react';
+import style from "./recipe.module.css";
+import Recipe from './Recipe';
+
+const Recipes = ({title, calories, image, ingredients}) => {
+    return ( 
+        // <div className={style.recipe}>
+        //     <img src={image} className={style.image} alt="" />
+        //     <div className={style.body}>
+        //         <h1>{title}</h1>
+        //         <ol>
+        //             {ingredients.map(ingredient => (
+        //                 <li>{ingredient.text}</li>
+        //             ))}
+        //         </ol>
+        //         <p>{calories}</p>
+        //     </div>
+        // </div>
+        <section class="text-gray-700 body-font">
+        <div class="container px-5 py-24 mx-auto">
+          <div class="flex flex-col">
+            <div class="h-1 bg-gray-200 rounded overflow-hidden">
+              <div class="w-24 h-full bg-blue-500"></div>
+            </div>
+            <div class="flex flex-wrap sm:flex-row flex-col py-6 mb-12">
+              <h1 class="sm:w-2/5 text-gray-900 font-medium title-font text-2xl mb-2 sm:mb-0">Space The Final Frontier</h1>
+              <p class="sm:w-3/5 leading-relaxed text-base sm:pl-10 pl-0">Street art subway tile salvia four dollar toast bitters selfies quinoa yuccie synth meditation iPhone intelligentsia prism tofu. Viral gochujang bitters dreamcatcher.</p>
+            </div>
+          </div>
+          <div class="flex flex-wrap sm:-m-4 -mx-4 -mb-10 -mt-4">
+            <Recipe />
+            <Recipe />
+            <Recipe />
+          </div>
+        </div>
+      </section>
+     );
+}
+ 
+export default Recipes;
